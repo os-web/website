@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">  
+        <title>first web project</title>
+        <script type='text/javascript' src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+            <div id="table"> 
+            <form action="http://127.0.0.1:30000" method="get" name="test" id="form">
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="Name" placeholder="ваше имя" id="name " minlength="3" required><br></br>
+                <label for="name">Ваш возраст:</label>
+                <input type="number" name="userAge" placeholder="Введите возраст" id="userAge" maxlength="3" required><br><br>
+                <label for="name">Email:</label>
+                <input type="text" name="Email" placeholder="введите Email" id="email" required><br></br>
+                <label for="name">Ваш пароль:</label>
+                <input type="password" name="Password" placeholder="введите пароль" id="password" minlength="6" required><br></br>
+                <label for="name">Ваши данные:</label>
+                <input type="submit" onclick="valid" name="Submit" value="Отправить">
+            </form>
+            </div>
+    <script src='script.js'></script
+    </body>
+</html>
+
