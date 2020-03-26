@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="../client/css/fontawesome.css">
+        <link rel="stylesheet" href="../client/css/jquery.fancybox.min.css">
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">  
-        <title>first web project</title>
-        <script type='text/javascript' src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <title>web project</title>      
     </head>
     <body>
-            <div id="table"> 
-            <form action="http://127.0.0.1:30000" method="get" name="test" id="form">
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="Name" placeholder="ваше имя" id="name " minlength="3" required><br></br>
-                <label for="name">Ваш возраст:</label>
-                <input type="number" name="userAge" placeholder="Введите возраст" id="userAge" maxlength="3" required><br><br>
-                <label for="name">Email:</label>
-                <input type="text" name="Email" placeholder="введите Email" id="email" required><br></br>
-                <label for="name">Ваш пароль:</label>
-                <input type="password" name="Password" placeholder="введите пароль" id="password" minlength="6" required><br></br>
-                <label for="name">Ваши данные:</label>
-                <input type="submit" onclick="valid" name="Submit" value="Отправить">
-            </form>
+        <header>
+            <div class="container">
+                <div class="heading">
+                    <h1><a class="head" href="#">Спілка українських<br>заробітчан<img src="../client/img/flag.jpg" width="80" height="40"><br></a>
+                    <p class="ptxt">На цьому сайті ви можете знайти тільки <br> порядних працедавців</p></h1>
+                    <div>
+                        <nav> 
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Про нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Рейтинг працедавців</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" name="" class="search-txt" placeholder="пошук на сайті..."/>
+                    <a class="search-btn" href="http://google.com">
+                        <i class="fa fa-search"></i>
+                    </a>
+               </div> 
+                <a data-fancybox data-src="#modal" href="javascript:;" class="button" href="form.html">Клацни тут<br>щоб залишити відгук</a>
+                <div id="modal">
+                    <h2>Hello!</h2>
+                    <p>You are awesome!</p>
+                </div>
             </div>
-    <script src='script.js'></script
+        </header>
+        
+        <section>
+            <div class="container">
+            </div>
+        </section>
+            
+        <footer> 
+            <div class="container">  
+            </div>   
+        </footer>
+            <div id="table"> 
+                <form action="http://127.0.0.1:30000" method="get" name="test" id="form">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="Name" placeholder="введите ваше имя" id="name " minlength="3" required><br></br>
+                    <label for="name">Ваш возраст:</label>
+                    <input type="number" name="userAge" placeholder="введите возраст" id="userAge" maxlength="3" required><br><br>
+                    <label for="name">Email:</label>
+                    <input type="text" name="Email" placeholder="введите Email" id="email" required><br></br>
+                    <label for="name">Ваш пароль:</label>
+                    <input type="password" name="Password" placeholder="введите пароль" id="password" minlength="6" required><br></br>
+                    <label for="name">Ваши данные:</label>
+                    <input type="submit" onclick="valid" name="Submit" value="Отправить">
+                </form>
+            </div>
+                  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="../client/js/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
 

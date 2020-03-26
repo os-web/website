@@ -1,12 +1,128 @@
 body {
-    background: #9ED4DE;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
-
-
-
+.heading{
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.head{
+    color:rgba(240, 205, 9);
+    text-decoration: none;
+}
+header {
+    background: url(../client/img/header.jpg)no-repeat center top / cover;
+    padding-bottom: 90px;
+}
+h1 {
+    float: left;
+    font-size: 35px;
+    color: rgba(240, 205, 9);
+    margin-left: 50px;  
+}
+.ptxt{
+    font-style: italic;
+    color: rgb(240, 205, 9);
+    font-size: 18px;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.menu li {
+    float: right;
+    display: block;
+    margin-right: 30px;
+    margin-top: 35px;
+}
+.menu a {
+    color: rgb(240, 205, 9);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.search {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+} 
+.search:hover > .search-btn {
+    background:rgb(240, 205, 9);
+    color: #2f3640;
+}
+.search-btn {
+    color: #e84118;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: rgb(240, 205, 9);
+    cursor: pointer;
+    text-decoration: none;
+}
+.search-btn > i {
+    font-size: 30px;
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 0;
+    color: rgb(240, 205, 9);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
+.button{
+    background: rgb(240, 205, 9);
+    color: #2f3640;
+    border-radius: 50%;
+    display: block;
+    width: 280px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 240px;
+}
+.button:hover{
+    color:rgb(240, 205, 9);
+    background-color: #2f3640;
+}
 #table{
     width: 500px;
     height: 500px;
     margin-left: 500px;
     margin-top: 200px;
+}
+#modal{
+    display: none;
 }

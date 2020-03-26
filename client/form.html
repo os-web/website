@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form</title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<div id=""> 
+            <form action="http://127.0.0.1:30000" method="get" name="test" id="form">
+                <label for="name">Ім'я:</label>
+                <input type="text" name="name" placeholder="напишіть своє ім'я" id="name " minlength="3" required><br></br>
+				<label for="name">Фамілія:</label>
+                <input type="text" name="surname" placeholder="напишіть свою фамілію" id="surname " minlength="3" required><br></br>
+                <label for="name">Ваш вік:</label>
+                <input type="number" name="userAge" placeholder="напишіть скільки вам років" id="userAge" maxlength="3" required><br><br>
+                <label for="name">Email:</label>
+                <input type="text" name="email" placeholder="напишіть свій Email" id="email" required><br></br>
+				<label for="name">Ваша сторінка Facebook:</label>
+                <input type="text" name="facebook" placeholder="напишіть url-адресу вашої сторінки" id="email" required><br></br>
+				<label for="name">Фото з місця праці:</label>
+                <input type="" name="photo" placeholder="завантажте своє фото" id="photo" required><br></br>
+                
+                <label for="name">Ваш відгук:</label>
+                <input type="submit" onclick="valid" name="Submit" value="Відправити на обробку адміністратором">
+            </form>
+		</div>
+	</body>
+</html>

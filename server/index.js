@@ -1,27 +1,16 @@
 var http = require('http');
 var url = require('url');
 var fs = require('fs');
-
 http.createServer(function(request, response){
-    response.writeHead(200, {"Content-Type":"text/plain"});
+    response.writeHead(200, {'Content-Type':'text/plain'});
     var params = url.parse(request.url, true).query;
-      
-    
     console.log(params);
-    var a = params.name;
-    var b = params.email;
-
-    var numA = String (a);
-    var numB = String(b);
-    var sum = String(numA+numB);
-
-    response.write(sum);
+    var a = params.Name;
+    response.write('finish');
     response.end();
-    fs.writeFile('write.txt', sum, 'utf8', function(error){
-        if(error) throw error;
-        console.log("Запись файла завершена. Содержимое файла:");
-        var data = fs.writeFileSync("write.txt")
-        console.log(data);
+    fs.writeFile('write.txt', a, function(err){
+        if(err) throw error;
+        console.log('Запись файла завершена.');
     });
-
 }).listen(30000);
+
